@@ -1,0 +1,30 @@
+/**
+ Folha de estilo principal do html5 + css3
+ @author Sabrina da Silva
+
+ */
+
+/****************  IMPORTANDO FONT ****************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/**************** Principal ****************/
+body {
+	font-family: 'Open Sans', sans-serif;
+	/*background-color: #ffffff;*/
+	background-image: url("../imagens/textura.jpg");
+	background-attachment: fixed; /* fixa o background */
+	background-size: cover; /* manter o tamanho de forma responsiva */
+	font-size: 1em; /* 1em = 16 px */
+}
+
+#main{
+	max-width: 1024px;
+	background-color: #FAF0E6;
+	margin: 0 auto; /* centralizar a div*/
+
+}
+
+/***************** Tratamento responsivo *****************/
+
+img{
+	max-width: 100%; /*todas as imagens do site ficam responsivas */
+}
