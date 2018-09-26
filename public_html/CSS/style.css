@@ -20,8 +20,24 @@ body {
 	max-width: 1024px;
 	background-color: #FAF0E6;
 	margin: 0 auto; /* centralizar a div*/
+	margin-top: 50px; /* box model */
 
 }
+ /*********** Cabeçalho *************/
+ header{
+ 	width: 100%;
+ 	height: 200px;
+ 	background-color: #FFE4E1; /* dica para ajustar elementos */
+
+ }
+ header img {
+ 	width: 128px;
+ 	height: 128px;
+ 	margin-top: 20px;
+ }
+
+/*********** MENU **********/
+
 
 /***************** Tratamento responsivo *****************/
 
