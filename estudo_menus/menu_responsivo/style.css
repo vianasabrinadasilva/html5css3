@@ -1,0 +1,64 @@
+/**
+Estudo dos menus
+menu drop responsivo
+@author Sabrina da Silva
+data 01/10/2018
+*/
+
+body{
+	font-family: sans-serif;
+}
+
+nav{
+	width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: #C71585;
+	overflow: hidden; /* completar a largura total com o background (formar o menu)*/
+}
+
+nav > ul > li{
+	float: left;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #FFF0F5;
+	padding: 15px;
+	display: block;
+}
+
+nav ul li a:hover{
+	background-color: #F08080;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+/* Desenhando um triângulo no css */
+
+.Detalhes:after{ /* Atributo after (após o conteudo)*/
+	content: ''; /* Content: insere um conteudo no css */
+	color: #FFFFFF;
+	border: 5px solid transparent;
+	/* border-left-color: #800000;
+	border-right-color: #800000;
+	border-bottom-color: #FF69B4; */
+	border-top-color: #FFF0F5; 
+	/* Alinhamento */
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
