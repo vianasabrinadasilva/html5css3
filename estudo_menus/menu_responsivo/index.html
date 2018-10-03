@@ -5,14 +5,19 @@
 	<title>Estudo dos menus - Menu Responsivo</title>
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width ,initial scale=1.0">	
+	<!-- uso da jquery via CDN do google -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Menu Responsivo</h1>
-	<nav>
+	<nav class="Menu"><!-- Classe usada para fixar o menu no JS -->
+		<!-- &#9776 desenhando 3 linhas horizontais -->
+				<a href="#" class="Mobile">&#9776 Menu</a>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Sobre</a></li>
 			<li><a href="#" class="Detalhes">Conteúdo </a>
+				
 				<ul>
 					<li><a href="#">♥ HTML5</a></li>
 					<li><a href="#">♥ CSS3</a></li>
@@ -88,6 +93,11 @@
 			venenatis mi senectus venenatis vivamus laoreet tempus ut ligula tempor cubilia sollicitudin venenatis fames dapibus cubilia fringilla, vehicula lacus ac enim phasellus metus ultrices fusce aptent gravida ut a curabitur nostra. 
 			rhoncus tortor sagittis eleifend blandit dictum in sollicitudin, vulputate fames elementum a ultrices ipsum lectus, praesent egestas cras purus sapien mattis. 
 			magna ornare eleifend class aptent nec orci faucibus semper, pharetra felis ipsum quisque purus torquent himenaeos turpis luctus, habitasse interdum aliquet ultrices suscipit turpis auctor. 
-			</p>		
+			</p>	
+
+
+<script src="scripts/menuresponsivo.js "></script>	
+<script src="scripts/fixamenu.js "></script>
+<script src="scripts/removeclick.js "></script>
 </body>
 </html>

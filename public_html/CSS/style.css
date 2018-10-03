@@ -44,3 +44,115 @@ body {
 img{
 	max-width: 100%; /*todas as imagens do site ficam responsivas */
 }
+
+
+
+/*********** MENU RESPONSIVO ***********/
+nav{
+	width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: #C71585;
+	overflow: hidden; /* completar a largura total com o background (formar o menu)*/
+}
+
+nav > ul > li{
+	float: left;
+	width: 25%; /* 4 elementos do seu primario */
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #FFF0F5;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+nav ul li a:hover{
+	background-color: #F08080;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+	width: 18%;
+}
+
+nav li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+/* Desenhando um triângulo no css */
+
+.Detalhes:after{ /* Atributo after (após o conteudo)*/
+	content: ''; /* Content: insere um conteudo no css */
+	color: #FFFFFF;
+	border: 5px solid transparent;
+	/* border-left-color: #800000;
+	border-right-color: #800000;
+	border-bottom-color: #FF69B4; */
+	border-top-color: #FFF0F5; 
+	/* Alinhamento */
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.Mobile{
+	display: none;
+}
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+/***** Tratamento responsivo ********/
+
+@media screen and (max-width: 480px){
+	body{	
+		margin: 0px;
+	}
+	#main{
+		margin: 0px;
+	}
+	/* menu hamburguer */
+	.Mobile{
+		display: block;
+		background-color: #C71585;
+		color: #FFF0F5;
+		text-decoration: none;
+		padding: 15px;
+}
+nav > ul > li{
+	float: none;
+	}
+
+nav ul{
+	width: 100%;
+	display: none;
+	}
+	
+	/* ajuste */
+
+	nav ul li a{
+		font-size: 0.87em;
+		padding: 12px;
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* remover efeito de trans~ição */
+
+	}
+	nav li ul li{
+		background-color: #FF69B4;
+	}
+}
+

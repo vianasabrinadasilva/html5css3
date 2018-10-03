@@ -10,6 +10,7 @@
 	<!-- A linha abaixo garante o layout responsivo nos diversos dispositivos mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<!-- estrutura principal -->
@@ -21,11 +22,12 @@
 	</header>
 
 	<!-- menu -->
-	<nav>
+	<nav class="Menu">
+		<a href="#" class="Mobile">&#9776 Menu</a>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Sobre</a></li>
-			<li><a href="#">Conteúdo</a>
+			<li><a href="#" class="Detalhes">Conteúdo</a>
 				<ul>
 				<li><a href="#">HTML</a></li>
 				<li><a href="#">CSS</a></li>
@@ -75,5 +77,9 @@
 
 	
 	</div>
+
+<script src="js/menuresponsivo.js "></script>	
+<script src="js/fixamenu.js "></script>
+<script src="js/removeclick.js "></script>
 </body>
 </html>
