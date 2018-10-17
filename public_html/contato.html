@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<!-- favicon -->
 	<link rel="icon" href="imagens/fav.png">
-	<title>Home - HTML5 CSS3</title>
+	<title>Contato - HTML5 CSS3</title>
 	<!-- SEO Importante -->
-	<meta name= description content="Aprenda HTML5 e CSS3 de forma simples e prática">
+	<meta name= description content="Sabrina da Silva Viana">
 	<!-- A linha abaixo garante o layout responsivo nos diversos dispositivos mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
@@ -40,35 +40,18 @@
 		</ul>
 	</nav>
 
-	<!-- conteúdo -->
-	<section id="banner">
-		<img src="imagens/banner.jpg" alt="Curso HTML5 CSS3">
-		<h1 style="text-align: center">Dê suas primeiras garfadas com HTML+CSS3</h1>
-	</section>
+	<!-- formulário de contato -->
+	<div id="contato">
+		<h1>Contato</h1>
+		<form action="formulario.php" method="POST">
+			<input type="text" name="nome" placeholder="nome">
+			<input type="text" name="email" placeholder="email">
+			<textarea name="mensagem" placeholder="mensagem"></textarea>
+			<input type="submit" value="Enviar">
+			</form>
+	</div>
 
-	<section id="heading" style="text-align: center">
-		<h2>Saboreie HTML5 e CSS3 de forma simples e prática, se deliciando com um site responsivo.</h2>
-	</section>
-
-	<section id="destaque" style="text-align: center">
-		<!-- Bloco 1 -->
-		<img src="imagens/fritas.png" alt="Comida">
-		<h2>Batata Frita</h2>
-		<p> lorem ipsum lorem ipsum</p>
-
-		<!-- Bloco 2 -->
-		<img src="imagens/hamburguer.png" alt="Comida">
-		<h2>Hamburguer</h2>
-		<p> lorem ipsum lorem ipsum</p>
-
-		<!-- Bloco 3 -->
-		<img src="imagens/pizza.png" alt="Comida">
-		<h2>Pizza</h2>
-		<p> lorem ipsum lorem ipsum</p>
-		
-	</section>
-
-	<!-- rodapé -->
+<!-- rodapé -->
 	<footer>
 		<p>©2018 - Sabrina da Silva Viana</p>
 	</footer>
