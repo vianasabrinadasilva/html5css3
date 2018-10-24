@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<!-- favicon -->
 	<link rel="icon" href="imagens/fav.png">
-	<title>Home - HTML5 CSS3</title>
+	<title>Fast Foods - Home</title>
 	<!-- SEO Importante -->
 	<meta name= description content="Aprenda HTML5 e CSS3 de forma simples e prática">
 	<!-- A linha abaixo garante o layout responsivo nos diversos dispositivos mobile -->
@@ -17,7 +17,7 @@
 	<div id="main">
 	<!-- cabeçalho -->
 	<header>
-		<a href="https://www.google.com.br/"><img src="imagens/logo.png" title = "HTML + CSS3" alt="Fritas"></a>
+		<a href="https://sabrinavianas.000webhostapp.com/"><img src="imagens/logo.png" title = "Fritas" alt="Fritas"></a>
 
 
 	</header>
@@ -30,9 +30,9 @@
 			<li><a href="sobre.html">Sobre</a></li>
 			<li><a href="#" class="Detalhes">Conteúdo</a>
 				<ul>
-				<li><a href="conteudo/html5.html">HTML</a></li>
-				<li><a href="conteudo/css3.html">CSS</a></li>
-				<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">JavaScript</a></li>
+				<li><a href="conteudo/burgerking.html">Burger King</a></li>
+				<li><a href="conteudo/mcdonalds.html">McDonald's</a></li>
+				<li><a href="https://www.ifood.com.br/" target="_blank">iFood</a></li>
 				</ul>
 			</li>
 
@@ -43,28 +43,35 @@
 	<!-- conteúdo -->
 	<section id="banner">
 		<img src="imagens/banner.jpg" alt="Curso HTML5 CSS3">
-		<h1 style="text-align: center">Dê suas primeiras garfadas com HTML+CSS3</h1>
+		<h1 style="text-align: center">Redes de Fast Food</h1>
 	</section>
 
 	<section id="heading" style="text-align: center">
-		<h2>Saboreie HTML5 e CSS3 de forma simples e prática, se deliciando com um site responsivo.</h2>
+		<h2>Fast-food é o nome genérico dado ao consumo de refeições que podem ser preparadas e servidas em um intervalo pequeno de tempo. São comercializados, desta maneira, sanduíches, pizzas e pastéis, entre outros.</h2>
 	</section>
 
 	<section id="destaque" style="text-align: center">
 		<!-- Bloco 1 -->
+		<div class="blocos">
 		<img src="imagens/fritas.png" alt="Comida">
 		<h2>Batata Frita</h2>
-		<p> lorem ipsum lorem ipsum</p>
-
+		<!--<p> lorem ipsum lorem ipsum</p>-->
+		<a href="conteudo/mcdonalds.html">Saiba +</a>
+		</div>
 		<!-- Bloco 2 -->
+		<div class="blocos">
 		<img src="imagens/hamburguer.png" alt="Comida">
 		<h2>Hamburguer</h2>
-		<p> lorem ipsum lorem ipsum</p>
-
+		<!--<p> lorem ipsum lorem ipsum</p>-->
+		<a href="conteudo/burgerking.html">Saiba +</a>
+		</div>
 		<!-- Bloco 3 -->
+		<div class="blocos">
 		<img src="imagens/pizza.png" alt="Comida">
 		<h2>Pizza</h2>
-		<p> lorem ipsum lorem ipsum</p>
+		<!--<p> lorem ipsum lorem ipsum</p>-->
+		<a href="https://www.ifood.com.br/" target="_blank">Saiba +</a>
+		</div>
 		
 	</section>
 
@@ -79,5 +86,6 @@
 <script src="js/menuresponsivo.js "></script>	
 <script src="js/fixamenu.js "></script>
 <script src="js/removeclick.js "></script>
+<script src="js/tela.js "></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
 
 /****************  IMPORTANDO FONT ****************/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /**************** Principal ****************/
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -37,9 +38,9 @@ body {
  	margin-top: 10px;
  	margin-left: 40px;
  }
- section img{
+ /*section img{
  	margin-top: 30px;
- }
+ }*/
 
 /*********** MENU **********/
 
@@ -56,13 +57,24 @@ img{
 	text-align: center;
 }
 
+.bk img{
+	width: 256px;
+	height: 256px;
+	margin-bottom: 10%;
+}
 
+.mc img{
+	width: 256px;
+	height: 256px;
+	margin-bottom: 10%;
+}
 
 /*********** MENU RESPONSIVO ***********/
 nav{
 	width: 100%;
 	max-width: 1024px;
 	position: absolute;
+	z-index: 3;
 }
 
 nav ul{
@@ -76,8 +88,8 @@ nav ul{
 nav > ul > li{
 	float: left;
 	/*width com esse valor devido a borda */
-	width: 24.903%; /* 4 elementos do menu primário */
-	border-right: 1px solid #FF69B4;
+	width: 25%; /* 4 elementos do menu primário */
+	/*border-right: 1px solid #FF69B4;*/
 }
 
 nav > ul > li > a{
@@ -128,7 +140,45 @@ nav li:hover ul{
 .Fixar{
 	position: fixed;
 	top: 0;
-	z-index: 3;
+	
+}
+
+/***** Conteúdo em Destaque - Home *****/
+/***** banner *****/
+#banner{
+	margin-top: 52px;
+	max-width: 1024px;
+	height: 350px;
+	/** usado para flexibilizar o layout **/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#banner img{
+	filter: brightness(40%);
+}
+
+#banner h1{
+	position: absolute;
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.7em;
+
+}
+/** heading **/
+
+#heading{
+	width: 80#;
+	margin: 0 auto;
+	padding: 35px;
+
+}
+
+#heading h2{
+	text-align: center;
+	font-weight: 400;
 }
 
 
@@ -147,15 +197,174 @@ nav li:hover ul{
 
 
 
+/***** blocos ****/
+#destaque{
+	max-width: 1024px;
+	height: 360px;
+}
+
+.blocos{
+	width: 30.76%; /* (315/1024)*100 */
+	height: 360px;
+	background-color: #F08080;
+	float: left;
+	margin-left: 0.97%; /* (20px/1024px)*100 */
+	border: 1px solid  #dedede;
+	text-align: center;
+	position: relative; /*posicionamento do botão*/ 
+}
+
+.blocos p{
+	/**padding: 0px 10px 0px 10px;
+	text-align: center;
+	top: 20px;**/
+}
+.blocos a{
+	width: 50px;
+	padding: 5px 35px 5px 35px;
+	display: block;
+	background-color: #DC143C;
+	color:#FFC0CB ;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 100px;
+	bottom: 0px;
+	border:0px;
+	border-radius: 10px;
+
+}
+
+/***** Formulário de Contato *****/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #C71585;
+	margin-bottom: 20px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #C71585;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #C71585;
+	border-radius: 5px;
+	border: 1px solid #000;
+	padding: 10px 25px 10px 25px;
+	color: #fff;
+}
+
+/****** 1o ponto de quebra***/
+@media screen and (max-width: 1058px){
+	body{	
+		margin: 0;
+	}
+	#main{
+		margin: 0;
+	}
+
+}
+/****** 2o ponto de quebra***/
+
+@media screen and (max-width: 920px){
+	body{	
+		margin-top: 50px;
+
+	}
+
+	.blocos a{
+		right:70px;
+	}
+}
+/****** 2o ponto de quebra***/
+@media screen and (max-width: 524px){
+	body{	
+		margin-top: 30px;
+
+	}
+	#banner{
+		margin: 0px; 
+	}
+	#main{
+		margin: 0;
+	}
+	.blocos a{
+		left: 12px;
+	}
+}
+
+/****** 2o ponto de quebra***/
+@media screen and (max-width: 542px){
+	body{	
+		margin-top: 30px;
+
+	}
+	#banner{
+		margin: 0px; 
+	}
+	#main{
+		margin: 0;
+	}
+	.blocos a{
+		right: 10px;
+	}
+}
+
+/****** 2o ponto de quebra***/
+@media screen and (max-width: 564px){
+	body{	
+		margin-top: 30px;
+
+	}
+	#banner{
+		margin: 0px; 
+	}
+	#main{
+		margin: 0;
+	}
+	.blocos a{
+		right: 10px;
+	}
+}
+
+/****** 2o ponto de quebra***/
+@media screen and (max-width: 577px){
+	body{	
+		margin-top: 30px;
+
+	}
+	#banner{
+		margin: 0px; 
+	}
+	#main{
+		margin: 0;
+	}
+	.blocos a{
+		right: 10px;
+	}
+}
 
 /***** Tratamento responsivo ********/
 
 @media screen and (max-width: 480px){
 	body{	
-		margin: 0px;
+		margin: 0;
 	}
 	#main{
-		margin: 0px;
+		margin: 0;
 	}
 
 	/*** cabeçalho ***/
@@ -165,6 +374,48 @@ nav li:hover ul{
  	margin-bottom: 0px;
 
  }
+
+#banner{
+	margin-top: 117px;
+	height: 0;
+
+}
+
+#banner h1{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#heading{
+	width: 90%;
+	padding:25px;
+	margin-top: 60px;
+}
+
+#heading h2{
+	font-size: 1.2em;
+}
+
+/**** blocos ****/
+#destaque{
+	max-width: 315px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.blocos{
+	width: 100%;
+	height: 360px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.blocos a{
+	left: 90px;
+}
+
+
  header img {
  	margin-top: 0px;
  	margin-left: 0px;
