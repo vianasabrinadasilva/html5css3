@@ -11,7 +11,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	/*background-color: #ffffff;*/
-	background-image: url("../imagens/textura.jpg");
+	background-image: url("../imagens/batatatexturateste.jpg");
 	background-attachment: fixed; /* fixa o background */
 	background-size: cover; /* manter o tamanho de forma responsiva */
 	font-size: 1em; /* 1em = 16 px */
@@ -19,7 +19,7 @@ body {
 
 #main{
 	max-width: 1024px;
-	background-color: #FAF0E6;
+	background-color: #fff;
 	margin: 0 auto; /* centralizar a div*/
 	margin-top: 50px; /* box model */
 
@@ -27,8 +27,8 @@ body {
  /*********** Cabeçalho *************/
  header{
  	width: 100%;
- 	height: 200px;
- 	background-color: #FFE4E1; /* dica para ajustar elementos */
+ 	height: 170px;
+ 	background-color: #fff; /* dica para ajustar elementos */
  	/*margin-bottom: 20px;*/
 
  }
@@ -81,7 +81,7 @@ nav ul{
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	/*background-color: #C71585;
+	/*background-color: #FF8C00;
 	overflow: hidden; /* completar a largura total com o background (formar o menu)*/
 }
 
@@ -97,16 +97,16 @@ nav > ul > li > a{
 }
 
 nav ul li a{
-	background-color: #C71585;
+	background-color: #FF8C00;
 	text-decoration: none;
-	color: #FFF0F5;
+	color: #FFFfff;
 	padding: 15px;
 	display: block;
 	text-align: center;
 }
 
 nav ul li a:hover{
-	background-color: #F08080;
+	background-color: #E5BA0D;
 	transition: all 0.27s; /* efeito transição (0 a 1) */
 }
 
@@ -127,7 +127,7 @@ nav li:hover ul{
 	/* border-left-color: #800000;
 	border-right-color: #800000;
 	border-bottom-color: #FF69B4; */
-	border-top-color: #FFF0F5; 
+	border-top-color: #F0E68C; 
 	/* Alinhamento */
 	display: inline-block;
 	vertical-align: middle;
@@ -185,13 +185,13 @@ nav li:hover ul{
 	/***** RODAPÉ *****/
 	footer{
 		width: 100%;
-		background-color: #C71585;
+		background-color: #FF8C00;
 		margin-top: 50px;
 		padding-top: 3px;
 		padding-bottom: 3px;
 		text-align: center;
 		color: #ffffff;
-		font-size: 0.75em;
+		font-size: 0.85em;
 
 	}
 
@@ -206,7 +206,7 @@ nav li:hover ul{
 .blocos{
 	width: 30.76%; /* (315/1024)*100 */
 	height: 360px;
-	background-color: #F08080;
+	background-color: #FFD700;
 	float: left;
 	margin-left: 0.97%; /* (20px/1024px)*100 */
 	border: 1px solid  #dedede;
@@ -223,8 +223,8 @@ nav li:hover ul{
 	width: 50px;
 	padding: 5px 35px 5px 35px;
 	display: block;
-	background-color: #DC143C;
-	color:#FFC0CB ;
+	background-color: #FF4500;
+	color:#F0E68C ;
 	text-decoration: none;
 	font-size: 0.875em;
 	position: absolute;
@@ -246,7 +246,7 @@ nav li:hover ul{
 	width: 100%;
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid #C71585;
+	border: 1px solid #FF8C00	;
 	margin-bottom: 20px;
 }
 
@@ -254,13 +254,13 @@ nav li:hover ul{
 	width: 100%;
 	padding: 10px 10px 40px 10px;
 	border-radius: 5px;
-	border: 1px solid #C71585;
+	border: 1px solid #FF8C00	;
 	margin-bottom: 20px;
 	resize: none;
 }
 
 #contato input[type=submit]{
-	background-color: #C71585;
+	background-color: #FF8C00	;
 	border-radius: 5px;
 	border: 1px solid #000;
 	padding: 10px 25px 10px 25px;
@@ -424,8 +424,8 @@ nav li:hover ul{
 	/* menu hamburguer */
 	.Mobile{
 		display: block;
-		background-color: #C71585;
-		color: #FFF0F5;
+		background-color: #FF8C00	;
+		color: #Ffffff;
 		text-decoration: none;
 		padding: 15px;
 }
@@ -452,11 +452,11 @@ nav ul{
 
 	}
 	nav li ul li{
-		background-color: #FF69B4;
+		background-color: #FFA500;
 	}
 
 	nav li  ul li a{
-		background-color:#FF69B4;
+		background-color:#FFA500;
 		padding-left: 40px;
 	}
 
